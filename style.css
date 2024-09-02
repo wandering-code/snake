@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+#marker-area {
+    background-color: rgb(198, 198, 198);
+    width: 800px;
+    height: 80px;
+}
+
+#game-area {
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}   
+
+#table-game-area {
+    margin: auto;
+}
+
+#table-game-area td {
+    width: 30px;
+    height: 30px;
+}
+
+
+.limit {
+    background-color: red;
+}
+
+#game-over {
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+#game-over img {
+    margin: auto;
+}
+
+#play-again {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(55, 158, 55);
+    margin: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

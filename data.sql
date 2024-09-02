@@ -1,0 +1,54 @@
+
+
+
+
+EQUIPO {
+    id, 
+    cod_tipo_equipo,
+    desc
+}
+
+TIPO_EQUIPO {
+    cod_tipo_equipo,
+    desc
+}
+
+
+
+
+SELECT e.*
+FROM EQUIPO e
+INNER JOIN TIPO_EQUIPO t
+ON e.ID = t.ID
+
+SELECT e.*
+FROM EQUIPO e
+OUTER JOIN TIPO_EQUIPO t
+ON e.ID = t.ID;
+
+SELECT e.*
+FROM EQUIPO e
+LEFT JOIN TIPO_EQUIPO t
+ON e.ID = t.ID;
+
+SELECT e.*
+FROM EQUIPO e
+RIGHT JOIN TIPO_EQUIPO t
+ON e.ID = t.ID;
+
+
+
+
+
+SELECT e.*
+FROM EQUIPO e
+LEFT JOIN TIPO_EQUIPO t
+ON e.ID = t.ID
+WHERE t.ID IS NULL;
+
+
+SELECT e.*
+FROM EQUIPO e
+RIGHT JOIN TIPO_EQUIPO t
+ON e.ID = t.ID
+WHERE e.ID IS NULL;
